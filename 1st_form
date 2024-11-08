@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        #main{
+            border: solid 10px rgb(112, 81, 112);
+            width: 800px;
+        }
+        #main1{
+           padding-left: 50px;
+           padding-right: 50px;
+        }
+        #header{
+            /* border-style: solid; */
+            /* padding-left: 50px; */
+        }
+        /* #header.h1{
+            padding-bottom: 0px;
+        } */
+        #para{
+            /* border: solid; */
+        }
+        
+        #middle{
+            /* border: solid 2px black; */
+            background-color: rgb(184, 193, 197);
+            margin-top: 25px;
+            /* height: 65px; */
+            padding: 10px;
+            text-align: center;
+            border-radius: 20px;
+        }
+        #m2{
+            /* border: solid 2px black; */
+            background-color: rgb(240, 173, 193);
+            display: flex;
+            border-radius: 20px;
+        }
+        #icon{
+            /* border: solid; */
+            width: 75px;
+            text-align: center;
+        }
+       #one{
+        font-size: 40px;
+        color: rgb(230, 86, 86);
+       }
+       #two{
+        font-size: 10px;
+       }
+        #con{
+            /* border: solid; */
+            width: 500px;
+        }
+        #table1{
+            /* border: solid 2px black; */
+        }
+        #table2{
+            /* border: solid 2px black; */
+            margin-top: 20px;
+
+        }
+        .input{
+            width: 485px;
+        }
+        input{
+            height: 25px;
+        }
+        #bottom{
+            position: center;
+        } 
+        #main1{
+            /* border: solid 2px black; */
+        }
+        #row1{
+            text-align: end;
+            width: 600px;
+        }
+        #row2{
+            text-align: end;
+            width: 100px;
+        }
+        #bottom{
+            /* border: solid; */
+            text-align: center;
+        }
+        button{
+            width: 200px;
+            height: 50px;
+        }
+        /* table, th, td {
+  border: 1px solid black;
+} */
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="main1">
+            <div id="header">
+                <h1>Conference Registeration</h1>
+            <div id="para">
+                <p>Please book for your conference by filling the form below, 
+                    specify the expected number joining the conference.</p>
+            </div>
+            <hr>
+                 </div>
+            <div id="table1">
+                <table style="width: 695px;">
+                    <tr style="height: 50px;">
+                        <td>Full Name <sup><i class="fa-solid fa-asterisk" style="color: red"></i></sup></td>
+                        <td ><input type="text" style="width: 230px;"></td>
+                        <td><input type="text" style="width: 230px;"></td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td >First Name</td>
+                        <td>last Name</td>
+                    </tr>
+                    <tr style="height: 50px;">
+                        <td>E-mail <sup><i class="fa-solid fa-asterisk" style="color: red"></i></sup></td>
+                        <td colspan="2"> <input type="text" placeholder="ex: myname@example.com" class="input"></td>
+                    </tr>
+                    <tr >
+                        <td> </td>
+                        <td colspan="2">example@example.com</td> 
+                    </tr>
+                    <tr style="height: 50px;">
+                        <td>Phone Number <sup><i class="fa-solid fa-asterisk" style="color: red"></i></sup></td>
+                        <td colspan="2"><input type="text" placeholder="(000) 000-0000" class="input"></td>
+                    </tr>
+                    <tr style="height: 50px;">
+                        <td>Number of person attending<sup><i class="fa-solid fa-asterisk" style="color: red"></i></sup></td>
+                        <td colspan="2"><input type="number" class="input"></td> 
+                    </tr>
+                    <tr>
+                        <td colspan="3">Address <sup><i class="fa-solid fa-asterisk" style="color: red"></i></sup></td>
+                    </tr>
+                    <tr >
+                        <td colspan="3">Street Address line1</td>
+                    </tr>
+                    <tr style="height: 50px;">
+                       <td colspan="3"><input type="text" style="width: 675px;"></td>
+                    </tr>
+                    <tr>
+                        <td>Street Adress line2</td>
+                    </tr>
+                    <tr style="height: 50px;">
+                        <td colspan="3"><input type="text" style="width: 675px;"></td>
+                     </tr>
+                    <tr style="height: 50px;">
+                        <td ><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>city</td>
+                        <td>state/province</td>
+                    </tr>
+                    <tr style="height: 50px;">
+                        <td colspan="3"><input type="text" ></td>
+                    </tr>
+                    <tr>
+                        <td>postal/Zip Code</td>
+                    </tr>
+                </table>
+            </div>
+             
+                <div id="middle">
+                    <p>Payments are processed through PayPal. You may pay using an existing Payal account, or any major credit card/debit card</p>
+                </div>
+                <h3>My products</h3>
+                <div id="m2">
+                    <div id="icon">
+                        <p><i class="fa-solid fa-triangle-exclamation" id="one"></i></p>
+                    </div>
+                    <div id="con">
+                    <p><i class="fa-solid fa-circle" id="two"></i>  You haven't finished  configuring this payments integration</p>
+                    <p>Go to <b>Payment settings </b>to configure your payments details and products</p>
+                    </div>
+                </div>
+                <div id="table2">
+                    <table>
+                        <tr style="height: 50px;">
+                            <td ><input type="checkbox"></td>
+                            <td style="width: 750px;">Conference Full-Access w/Dinner(members)</td>
+                            <td>$125.00</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td style="width: 750px; ">Conference Full-Access w/Dinner(non-members)</td>
+                            <td>$150.00</td>
+                        </tr>
+                    </table>
+                    <hr>
+                </div>
+                <table>
+                    <tr>
+                        <td colspan="2" id="row1">Total</td>
+                        <td id="row2">$0.00</td>
+                    </tr>
+                </table>
+                <hr>
+                <div id="btop">
+                    <h3>Payment Methods</h3>
+                    <table>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td><i class="fa-regular fa-credit-card" style="font-size: 20px;"></i> Debit or Credit card</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td> <i class="fa-brands fa-paypal" style="font-size: 30px;"></i> <i class="fa-brands fa-cc-paypal" style="font-size: 30px;"></i></td>
+                        </tr>
+                    </table>
+                  
+                </div>
+                <hr>
+                <div id="bottom">
+                    <p><button style="background-color: rgb(87, 240, 87); border-style: none;">Submit</button></p>
+                </div>
+        </div>
+    </div>
+   
+</body>
+</html>
