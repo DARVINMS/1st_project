@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #main{
+            border: solid 5px red;
+                width: 1200px;
+                display: flex;
+        }
+        #one{
+            /* border: solid 5px green; */
+            width: 605px;
+            padding: 25px;
+        }
+        #two{
+            /* border: solid 5px blue; */
+            width: 300px; 
+            height: 400px;
+        }
+        #button button{
+            border: none;
+            width: 555px;
+            height: 35px;
+            color: white;
+            background-color: rgb(50, 127, 243);
+        }
+        #one table{
+            /* border: solid; */
+            width: 600px;
+        }
+        input{
+            height: 25px;
+        }
+        #two table{
+            /* border: solid; */
+            width: 300px;
+        }
+        #two button{
+            height: 30px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+<div id="main">
+<div id="one">
+    <h1>Billing Address</h1>
+    <table>
+        <tr> 
+            <td colspan="3">First Name </td>
+            <td colspan="3">Last Name</td>
+        </tr>
+        <tr>
+            <td colspan="3"><input type="text" placeholder="Firstname" style="width: 250px;"></td>
+            <td colspan="3"><input type="text" style="width: 250px;"></td>
+        </tr>
+        <tr>
+            <td colspan="6">Username</td>
+            
+        </tr>
+        <tr><td  colspan="6"><input type="text" placeholder="Username" style="width: 555px;"></td></tr>
+
+        <tr>
+            <td colspan="6">Email(Optional)</td>
+            
+        </tr>
+        <tr>
+            <td  colspan="6"><input type="text" placeholder="you@example.com" style="width: 555px;"></td>
+        </tr>
+
+        <tr>
+            <td colspan="6">Address</td>
+            
+        </tr>
+        <tr>
+            <td  colspan="6"><input type="text" placeholder="1234 Main St" style="width: 555px;"></td>
+        </tr>
+
+        <tr>
+            <td  colspan="6">Address 2(Optional)</td>
+            
+        </tr>
+        <tr>
+            <td colspan="6"> <input type="text" placeholder="Apartment or suite" style="width: 555px;"></td>
+        </tr>
+        <tr>
+            <td  colspan="2">Country</td>
+            <td  colspan="2">State</td>
+            <td  colspan="2">Zip</td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="text" placeholder="choose..."></td>
+            <td colspan="2"><input type="text" placeholder="choose..."></td>
+            <td colspan="2"><input type="text" style="width: 130px;"></td>
+        </tr>
+       
+    </table>
+    <p><input type="checkbox">  Shipping address is the same as my Billing Address</p>
+    <p><input type="checkbox"> Save this Information for Next Time</p>
+    
+    <h1>Payment</h1>
+    <input type="radio">Credit Card<br>
+    <input type="radio">Debit Card<br>
+     <input type="radio">Paypal Card<br>
+    <table>
+        <tr>
+            <td>Name on Card</td>
+            <td>Credit card number</td>
+        </tr>
+        <tr>
+            <td><input type="text" style="width: 250px;"></td>
+            <td><input type="text" style="width: 250px;"></td>
+        </tr>
+        <tr>
+            <td colspan="2">Full name as displayed on card</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>Expiration</td>
+            <td>CVV</td>
+        </tr>
+        <tr>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+        </tr>
+    </table>
+    <div id="button">
+        <button> Continue to Checkout</button>
+    </div>
+    
+</div>
+<div id="two">
+    <h1>Your Cart</h1>
+    <table>
+        <tr>
+            <td>Product Name</td>
+            <td>12$</td>
+        </tr>
+
+        <tr><td><sub>brief description</sub></td></tr>
+
+        <tr>
+            <td>Second Product</td>
+            <td>$8</td>
+        </tr>
+
+        <tr><td><sub>brief description</sub></td></tr>
+
+        <tr>
+            <td>Third item</td>
+            <td>$5</td>
+        </tr>
+        <tr><td><sub>brief description</sub></td></tr>
+ 
+        <tr>
+            <td>Promo code</td>
+            <td>-$5</td>
+        </tr>
+
+        <tr><td><sub>EXAMPLE CODE</sub></td></tr>
+
+        <tr>
+            <td>Total(USD)</td>
+            <td>$20</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td><p>
+                <input type="text" name="" id="" placeholder="promo code"><button id="redeem">Redeem</button>
+            </p></td>
+        </tr>
+    </table>
+</div>
+</div>
+    
+    
+ 
+        
+        
+ 
+ 
+ 
+      
+</body>
+</html>
+ 
