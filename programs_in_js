@@ -1,0 +1,72 @@
+// 1st
+
+var arr= [1,2,3,4]
+var sum = 0
+for (count=0;count<arr.length;count++){
+    sum= sum + arr[count]
+};
+ console.log(sum)
+
+//2nd 
+
+var score = [70,58,90,60,88,95,72]
+
+ for (count=0;count<score.length;count++){
+    var sum = 0
+    sum = sum + score[count]
+ };
+//  console.log(sum)
+ var arv = sum/score.length
+ console.log(arv)
+
+ // 3rd
+var num1=[1,2,3,4]
+var num2 = [2,4,6,8]
+for (count=0;count<num1.length;count++) {
+  var num3 = num1[count]*num2[count]
+  console.log(num3)  
+};
+
+  // reverse
+
+  var strn = "darvin"
+  var res = '';
+//   console.log(strn.length);
+   for (a =strn.length-1;a>=0;a--){
+    // console.log(strn[a]);
+    res = res + strn[a];
+   };
+   console.log(res)
+
+
+//4th
+var num = ''
+for (a=1;a<=5;a++){
+num= num+a
+console.log(num)
+};
+
+
+// uppercase
+
+var word = "This is string upper case"
+var sent= ""
+ for (b=0;b<word.length;b++){
+    if (word[b-1]== " " || b==0){
+    var x  = word[b].toUpperCase()
+    sent = sent + x
+}
+    else {
+        sent = sent + word[b]
+    }
+ }
+ console.log(sent)
+
+
+// removwe and add last item
+var colors = ['Green','Red','Blue','Orange','Yellow']
+colors.pop()
+colors.pop()
+colors.push("White")
+colors.push("Violet")
+console.log(colors)
