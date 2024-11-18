@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #value{
+           /* border: solid 2px red; */
+           text-align: center;
+           margin-top: 100px;
+        }
+        #form1,#form2,#form3{
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="value">
+        <h1> Retaining form value</h1>
+
+        <form action="">
+            <label for="">NAME:</label> <input type="text" name="" id="form1"><br>
+            <label for="">LAST:</label> <input type="text" name="" id="form2"><br>
+          <label for="">EMAIL:</label><input type="text" name="" id="form3"><br>
+            <button onclick="formoutput()">submit</button>
+          <p>FIRSTNAME:<h4 id="1stvalue"></h4> </p>
+          <p>LASTNAME<h4 id="2ndvalue"></h4> </p>
+           <p>EMAIL<h4 id="3rdvalue"></h4></p>
+        </form>
+       
+    </div>
+<script>
+window.onload = function () {
+   const firstname = localStorage.getItem("form1")
+    const lastname = localStorage.getItem("form2")
+    const gmail = localStorage.getItem("form3")
+
+    document.getElementById("1stvalue").innerText = firstname;
+    document.getElementById("2ndvalue").innerText = lastname;
+    document.getElementById("3rdvalue").innerText = gmail;
+    console.log(firstname)
+
+};
+
+function formoutput(){
+    const first = document.getElementById("form1").value;
+    const last = document.getElementById("form2").value;
+    const email = document.getElementById("form3").value;
+    console.log(first)
+    localStorage.setItem('form1',first)
+    localStorage.setItem('form2',last)
+    localStorage.setItem('form3',email)
+
+}
+
+</script>
+</body>
+
+</html>
